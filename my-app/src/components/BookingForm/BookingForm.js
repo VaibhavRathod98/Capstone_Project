@@ -9,7 +9,7 @@ const BookingForm = ({
   dispatchOnDateChange
 }) => {
   const defaultTime = availableTimes[0];
-  
+
   const [formValues, setFormValues] = useState({
     name: "",
     date: "",
@@ -87,6 +87,7 @@ const BookingForm = ({
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.occasion ? "error" : ""}
         >
+          <option value="" disabled selected>Select</option>
           <option value="birthday">Birthday</option>
           <option value="anniversary">Anniversary</option>
           <option value="business">Business</option>

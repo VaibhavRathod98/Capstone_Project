@@ -8,7 +8,7 @@
   .containter-item-title {
     color: #fff;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
   
   .reservation-button {
@@ -30,6 +30,7 @@
     color: #495e57;
     cursor: pointer;
     transition: border-color 0.3s;
+    text-align: right;
   }
   
   input:focus,
@@ -40,4 +41,26 @@
   
   .error {
     border: 1px solid red !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    .reservation-container {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 1rem 0;
+    }
+
+    .containter-item-title {
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .reservation-button {
+      align-items: flex-start;
+    }
+
+    input,
+  select {
+    width: auto;
+  }
   }

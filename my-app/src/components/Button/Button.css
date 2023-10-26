@@ -1,15 +1,21 @@
 .button {
-    background: #f4ce14;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: #f4ce14;
-    color: #495e57;
-    font-weight: bold;
-    border: 0.1875rem solid #f4ce14;
-    font-size: 1em;
-  }
-  
-  .button:active {
-    background-color: #495e57;
-    color: white;
-  }
+  background: #f4ce14;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #a5ce12;
+  color: #24382e;
+  font-weight: bold;
+  border: 0.1875rem solid #bbb183;
+  font-size: 1em;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #748a4b;
+  color: rgb(23, 20, 20);
+}
+
+.button:active {
+  background-color: #565e49;
+  color: white;
+}
